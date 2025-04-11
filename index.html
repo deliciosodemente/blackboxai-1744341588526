@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Video Mapping</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="p-4 bg-gray-800">
+        <h1 class="text-3xl font-bold">Zapp</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Services</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="p-8">
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold">Transform Your Space with Interactive Video Mapping</h2>
+            <p>Experience stunning interactive video mapping technology.</p>
+            <button class="mt-4 bg-teal-500 text-white py-2 px-4 rounded">Learn More</button>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold">Revolutionize Your Events with Video Mapping</h2>
+            <p>Transform your events with immersive experiences.</p>
+            <button class="mt-4 bg-teal-500 text-white py-2 px-4 rounded">Get Started</button>
+        </section>
+    </main>
+    <footer class="p-4 bg-gray-800">
+        <p>&copy; 2023 Zapp. All rights reserved.</p>
+    </footer>
+    <script>
+        function learnMore() {
+            alert("Learn more about our interactive video mapping technology!");
+        }
+
+        function getStarted() {
+            alert("Get started with our video mapping services!");
+        }
+        
+        document.querySelector('button:nth-of-type(1)').addEventListener('click', learnMore);
+        document.querySelector('button:nth-of-type(2)').addEventListener('click', getStarted);
+    </script>
+</body>
+</html>
